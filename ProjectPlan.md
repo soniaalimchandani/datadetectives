@@ -7,14 +7,27 @@ The goal of our project is to research the Chicago ENERY STAR Scores for large b
 
 ### Team & Timeline
 
-#### Sonia Alimchandani 
-
-Specific responsibilities and tasksL
-
 #### Olivia Cieplak:
-General team guidelines: collaborate together, communicate on progress on project frequently
+Data lifecycle (cf. Module 1): Relate your project to one or more of the lifecycle models discussed in class.
+Ethical data handling (cf. Module 3): Identification of all ethical, legal, or policy constraints and how they were addressed. This includes issues related to consent, privacy/confidentiality, copyright, licenses and terms of use.
+Data quality (cf. Module 10): Document data quality assessment results.
+Data cleaning (cf. Module 11-12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic 
+Work on interim status report and submit it
+Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. 
+Metadata and data documentation (cf. Module 15): Metadata and data documentation to support discovery, understandability, and reuse.
+Work on putting together final project and submitting
 
-Specific responsibilities and tasks: link project to data lifecycle model, identify and explain ethical and legal constraints, data quality, metadata
+#### Sonia Alimchandani:
+FilesStorage and organization (cf. Modules 2): Select and describe what kind of files and data types you are working with. Describe a specific storage and organization strategy. This may include use of tabular, relational, or semi-structured models. Describe the specific organization strategy you are using. 
+Data collection and acquisition (cf. Module 4): Collection or acquisition of at least 2 different datasets from trustworthy sources. Selected datasets should either have different access methods (e.g., APIs) or formats/schemas.
+Extraction and enrichment (optional, cf. Module 5):
+Data integration (cf. Module 7-8): Integration of datasets (Python/Pandas or SQL)
+Data cleaning (cf. Module 11-12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic cleaning)
+Work on interim status report and submit it
+Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. 
+Reproducibility and provenance (cf. Module 14):  Your project must provide sufficient information to allow someone else to reproduce your workflow and analysis. 
+Work on putting together final project and submitting
+
 
 | Week | Tasks |
 |-----|------|
