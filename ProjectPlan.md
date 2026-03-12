@@ -59,7 +59,7 @@ Combining these datasets allows us to analyze multi-year trends in building ener
 ### Timeline
 Project Plan Deadline: Thursday March 12 @ 11:59 PM
 
-Spring Break: March 14-22
+Interim Status Report Deadline: March 31
 
 Final Project Submission: May 3
 
