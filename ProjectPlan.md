@@ -4,6 +4,8 @@
 
 The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data to answer questions. There will be multiple steps and approaches we will have to perform in the analysis of this data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit. Using the data, we want to explore if certain Chicago neighborhoods and property types play a role in building energy use performance.
 
+This project builds on Chicago’s energy transparency policies, including the Chicago Energy Benchmarking Ordinance and the Chicago Energy Rating System. The benchmarking ordinance, enacted in 2013, requires large buildings to measure and report their annual energy use. To expand this effort, the Energy Rating System was introduced in 2017 and began assigning buildings a 0–4 star energy rating in 2019. These ratings must be displayed publicly and disclosed during property sales or leases, with the goal of increasing transparency and encouraging property owners to improve energy efficiency. Ultimately, this analysis aims to provide insight into how energy transparency policies may influence building efficiency and contribute to broader climate and sustainability goals.
+
 
 ### Team Members and Responsibilities
 
