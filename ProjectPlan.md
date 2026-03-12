@@ -42,7 +42,18 @@ What types of properties had better energy usage in the first place?
 
 ### Datasets
 
-We are using the Chicago Energy Benchmarking Data reported from 2019-2024 all reporting data from the year prior, so it is information on Chicago buildings from 2018-2023. The data is on buildings larger than 50,000 square-feet and it tracks full-building energy use.
+Our project uses datasets from the Chicago Energy Benchmarking Data, which report annual energy performance metrics for large buildings in Chicago. These datasets include information such as ENERGY STAR scores, Energy Use Intensity (EUI), greenhouse gas emissions, water use, building characteristics, and Chicago Energy Ratings. The data is on buildings larger than 50,000 square-feet and it tracks full-building energy use.
+
+Each dataset represents the energy usage for a specific year but is released the following year after reporting and validation. The datasets used in this project include:
+
+- 2018 data (reported in 2019): First year including Chicago Energy Ratings.
+- 2019 data (reported in 2020)
+- 2020 data (reported in 2021)
+- 2021 data (reported in 2023)
+- 2022 data (reported in 2023)
+- 2023 data (reported in 2024)
+
+Combining these datasets allows us to analyze multi-year trends in building energy performance and track changes across building types and neighborhoods.
 
 
 ### Timeline
