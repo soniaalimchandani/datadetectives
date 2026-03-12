@@ -16,6 +16,14 @@ General team guidelines: collaborate together, communicate on progress on projec
 
 Specific responsibilities and tasks: link project to data lifecycle model, identify and explain ethical and legal constraints, data quality, metadata
 
+| Week | Tasks |
+|-----|------|
+| **March 22–28** | **(Olivia)** Data lifecycle (cf. Module 1): Relate your project to one or more of the lifecycle models discussed in class.<br><br>**(Sonia)** Files storage and organization (cf. Module 2): Select and describe what kind of files and data types you are working with. Describe a specific storage and organization strategy. This may include use of tabular, relational, or semi-structured models. Describe the specific organization strategy you are using.<br><br>**(Olivia)** Ethical data handling (cf. Module 3): Identification of all ethical, legal, or policy constraints and how they were addressed. This includes issues related to consent, privacy/confidentiality, copyright, licenses, and terms of use.<br><br>**(Sonia)** Data collection and acquisition (cf. Module 4): Collection or acquisition of at least 2 different datasets from trustworthy sources. Selected datasets should either have different access methods (e.g., APIs) or formats/schemas.<br><br>**(Sonia)** Extraction and enrichment (optional, cf. Module 5).<br><br>**(Sonia)** Data integration (cf. Modules 7–8): Integration of datasets (Python/Pandas or SQL).<br><br>**(Olivia)** Data quality (cf. Module 10): Document data quality assessment results. |
+| **March 29–April 4** | **(Both)** Data cleaning (cf. Modules 11–12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic cleaning).<br><br>**(Both)** Work on interim status report and submit it. |
+| **April 5–11** | **(Both)** Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
+| **April 12–18** | **(Both)** Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
+| **April 19–25** | **(Sonia)** Reproducibility and provenance (cf. Module 14): Your project must provide sufficient information to allow someone else to reproduce your workflow and analysis.<br><br>**(Olivia)** Metadata and data documentation (cf. Module 15): Metadata and data documentation to support discovery, understandability, and reuse. |
+| **April 26–May 3** | **(Both)** Work on putting together the final project and submitting. |
 
 ### Research/Business Question(s)
 
