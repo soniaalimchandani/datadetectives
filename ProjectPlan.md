@@ -5,14 +5,16 @@
 The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data to answer questions. There will be multiple steps and approaches we will have to perform in the analysis of this data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit. Using the data, we want to explore if certain Chicago neighborhoods and property types play a role in building energy use performance.
 
 
-### Team
+### Team & Timeline
 
 #### Sonia Alimchandani 
+
+Specific responsibilities and tasksL
 
 #### Olivia Cieplak:
 General team guidelines: collaborate together, communicate on progress on project frequently
 
-Specific responsibilties and tasks: link project to data lifecycle model, identify and explain ethical and legal constraints, ...
+Specific responsibilities and tasks: link project to data lifecycle model, identify and explain ethical and legal constraints, data quality, metadata
 
 
 ### Research/Business Question(s)
