@@ -1,9 +1,17 @@
 ## datadetectives
 ## Data Lifecycle
 
-### Overview
+## Overview
 
-The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit.
+The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data to answer questions. There will be multiple steps and approaches we will have to perform in the analysis of this data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit. Using the data, we want to explore if certain Chicago neighborhoods and property types play a role in building energy use performance.
+
+### Research/Business Question(s)
+
+How has monitoring energy use and posting public placards on buildings affected energy efficiency in large Chicago buildings?
+
+Are there property types or neighborhoods that were more likely to improve energy efficiency scores?
+
+What types of properties had better energy usage in the first place?
 
 ### Team
 Sonia Alimchandani 
