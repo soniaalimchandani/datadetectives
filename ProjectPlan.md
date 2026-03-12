@@ -1,4 +1,4 @@
-## datadetectives
+## ENERGY TRANSPARENCY AND BUILDING PERFORMANCE IN CHICAGO
 
 ## Overview
 
