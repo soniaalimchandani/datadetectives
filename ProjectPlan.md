@@ -7,7 +7,7 @@ The goal of our project is to research the Chicago ENERY STAR Scores for large b
 
 ### Team & Timeline
 
-## Olivia Cieplak
+#### Olivia Cieplak
 - **Data lifecycle (cf. Module 1):** Relate your project to one or more of the lifecycle models discussed in class.
 - **Ethical data handling (cf. Module 3):** Identification of all ethical, legal, or policy constraints and how they were addressed. This includes issues related to consent, privacy/confidentiality, copyright, licenses, and terms of use.
 - **Data quality (cf. Module 10):** Document data quality assessment results.
@@ -17,7 +17,7 @@ The goal of our project is to research the Chicago ENERY STAR Scores for large b
 - **Metadata and data documentation (cf. Module 15):** Metadata and data documentation to support discovery, understandability, and reuse.
 - Work on putting together the final project and submitting.
 
-## Sonia Alimchandani
+#### Sonia Alimchandani
 - **Files storage and organization (cf. Module 2):** Select and describe what kind of files and data types you are working with. Describe a specific storage and organization strategy. This may include use of tabular, relational, or semi-structured models. Describe the specific organization strategy you are using.
 - **Data collection and acquisition (cf. Module 4):** Collection or acquisition of at least 2 different datasets from trustworthy sources. Selected datasets should either have different access methods (e.g., APIs) or formats/schemas.
 - **Extraction and enrichment (optional, cf. Module 5).**
