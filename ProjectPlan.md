@@ -5,7 +5,7 @@
 The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data to answer questions. There will be multiple steps and approaches we will have to perform in the analysis of this data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit. Using the data, we want to explore if certain Chicago neighborhoods and property types play a role in building energy use performance.
 
 
-### Team & Timeline
+### Team Members and Responsibilities
 
 #### Olivia Cieplak
 - **Data lifecycle (cf. Module 1):** Relate your project to one or more of the lifecycle models discussed in class.
@@ -29,15 +29,6 @@ The goal of our project is to research the Chicago ENERY STAR Scores for large b
 - Work on putting together the final project and submitting.
 
 
-| Week | Tasks |
-|-----|------|
-| **March 22–28** | Data lifecycle (cf. Module 1): Relate your project to one or more of the lifecycle models discussed in class.<br><br>Files storage and organization (cf. Module 2): Select and describe what kind of files and data types you are working with. Describe a specific storage and organization strategy. This may include use of tabular, relational, or semi-structured models. Describe the specific organization strategy you are using.<br><br>Ethical data handling (cf. Module 3): Identification of all ethical, legal, or policy constraints and how they were addressed. This includes issues related to consent, privacy/confidentiality, copyright, licenses, and terms of use.<br><br>Data collection and acquisition (cf. Module 4): Collection or acquisition of at least 2 different datasets from trustworthy sources. Selected datasets should either have different access methods (e.g., APIs) or formats/schemas.<br><br>Extraction and enrichment (optional, cf. Module 5).<br><br>Data integration (cf. Modules 7–8): Integration of datasets (Python/Pandas or SQL).<br><br>Data quality (cf. Module 10): Document data quality assessment results. |
-| **March 29–April 4** | Data cleaning (cf. Modules 11–12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic cleaning).<br><br>Work on interim status report and submit it. |
-| **April 5–11** | Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
-| **April 12–18** | Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
-| **April 19–25** | Reproducibility and provenance (cf. Module 14): Your project must provide sufficient information to allow someone else to reproduce your workflow and analysis.<br><br>Metadata and data documentation (cf. Module 15): Metadata and data documentation to support discovery, understandability, and reuse. |
-| **April 26–May 3** | Work on putting together the final project and submitting. |
-
 ### Research/Business Question(s)
 
 How has monitoring energy use and posting public placards on buildings affected energy efficiency in large Chicago buildings?
@@ -59,6 +50,14 @@ Spring Break: March 14-22
 
 Final Project Submission: May 3
 
+| Week | Tasks |
+|-----|------|
+| **March 22–28** | Data lifecycle (cf. Module 1): Relate your project to one or more of the lifecycle models discussed in class.<br><br>Files storage and organization (cf. Module 2): Select and describe what kind of files and data types you are working with. Describe a specific storage and organization strategy. This may include use of tabular, relational, or semi-structured models. Describe the specific organization strategy you are using.<br><br>Ethical data handling (cf. Module 3): Identification of all ethical, legal, or policy constraints and how they were addressed. This includes issues related to consent, privacy/confidentiality, copyright, licenses, and terms of use.<br><br>Data collection and acquisition (cf. Module 4): Collection or acquisition of at least 2 different datasets from trustworthy sources. Selected datasets should either have different access methods (e.g., APIs) or formats/schemas.<br><br>Extraction and enrichment (optional, cf. Module 5).<br><br>Data integration (cf. Modules 7–8): Integration of datasets (Python/Pandas or SQL).<br><br>Data quality (cf. Module 10): Document data quality assessment results. |
+| **March 29–April 4** | Data cleaning (cf. Modules 11–12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic cleaning).<br><br>Work on interim status report and submit it. |
+| **April 5–11** | Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
+| **April 12–18** | Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow. |
+| **April 19–25** | Reproducibility and provenance (cf. Module 14): Your project must provide sufficient information to allow someone else to reproduce your workflow and analysis.<br><br>Metadata and data documentation (cf. Module 15): Metadata and data documentation to support discovery, understandability, and reuse. |
+| **April 26–May 3** | Work on putting together the final project and submitting. |
 
 ### Constraints
 
