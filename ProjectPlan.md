@@ -74,13 +74,18 @@ Final Project Submission: May 3
 
 ### Constraints
 
-The dataset provides information on primary property type, but there could be buildings used for multiple things and there is no way to determine that with the information given. On a related note, there could be outside forces and factors not made clear by the data that affect some businesses more than others. We will not be able to determine the role that other events influence a building's ENERGY STAR Score, so we will not be able to draw fully consclusive results.
-Some missing datapoints
-Placards 
+We anticipate there to be some challenges and constraints when working with the data for this project. There may be inconsistent schemas between the datasets, and we will have to ensure that we can accurately match up variables and/or observations that represent the same things. Also, we are contrained based on the information reported by the city ordinance and cannot see how external forces and factors may be affecting building energy efficiencies. 
+
+In terms of ethical constraints, we do not want to damage the image or reputation of the buildings that we are analyzing if they have low energy scores. If certain neighborhoods have a majority of buildings, we also don't want to create stereotypes or negative connotations connected to them. Our goal is to make observations and turn them into insights about Chicago buildings and the effect of publicly displayed energy score placards, not influence reputations.
+
 
 
 ### Gaps
 
-After analyzing the year by year Chicago Energy Benchmark Report datasets, we have determined some gaps that may be present in the data. Since the Chicago Energy Rating System began in 2019, there is not extensive history on the energy efficiency of these buildings. This will make it difficult to determine trends and changes over the years. We will need to clean the datasets potentially dropping rows or columns if they do not have consistent information. 
+After beginning analysis on the year by year Chicago Energy Benchmark Report datasets, we have determined some gaps that may be present in the data. Since the Chicago Energy Rating System began in 2019, there is not extensive history on the energy efficiency of these buildings. This will make it difficult to determine trends and changes over the years. Making a building more energy efficient could be costly and timely, so even if there are changes being put into place for buildings, the actions taken may not be shown in their numbers yet. 
 
-Making a building more energy efficient could be costly and timely, so even if there are changes being put into place for buildings, the actions taken may not be shown in their numbers yet. Additionally, some buildings have been able to receive exemptions from receiving an energy score. Without information on exempt buildings, the data for those property types could be scewed. We will be learning as we work on the project, do our ideas and processes will continue to evolve our plans as the semester progresses.
+Additionally, some buildings have been able to receive exemptions from receiving an energy score. Without information on exempt buildings, the data for those property types and neighborhoods could be scewed. We will need to clean the datasets potentially dropping rows or columns if they do not containt consistent information. 
+
+Another gap in our information is that we only have information on the primary property type of each building. We don't know how many companies may be operating in the same buildings. It also would be informative to know if occupancy and usage rates of buildings have changed. For example, the COVID-19 pandemic led to many people in Chicago working from home instead of office buildings, did this social change affect Chicago building energy usage disproportionately?
+
+There are areas and topics of this project that we would like more information on that we do not have from the datasets. Additional research may be necessary in order to draw more confident insights in our analysis.
