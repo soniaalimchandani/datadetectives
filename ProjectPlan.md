@@ -1,9 +1,19 @@
 ## datadetectives
-## Data Lifecycle
 
 ## Overview
 
 The goal of our project is to research the Chicago ENERY STAR Scores for large buildings of different property types over recent years and identify trends and connections in the data to answer questions. There will be multiple steps and approaches we will have to perform in the analysis of this data. Merging the datasets from each year will help us see how scores for buildings changed year to year. We will also have to clean the data as there are missing datapoints from buildings that were exempt from submitting certain years and from buildings that just simply failed to submit. Using the data, we want to explore if certain Chicago neighborhoods and property types play a role in building energy use performance.
+
+
+### Team
+
+#### Sonia Alimchandani 
+
+#### Olivia Cieplak:
+General team guidelines: collaborate together, communicate on progress on project frequently
+
+Specific responsibilties and tasks: link project to data lifecycle model, identify and explain ethical and legal constraints, ...
+
 
 ### Research/Business Question(s)
 
@@ -13,10 +23,10 @@ Are there property types or neighborhoods that were more likely to improve energ
 
 What types of properties had better energy usage in the first place?
 
-### Team
-Sonia Alimchandani 
 
-Olivia Cieplak - collaborate together, communicate on progress on project frequently
+### Datasets
+
+We are using the Chicago Energy Benchmarking Data reported from 2019-2024 all reporting data from the year prior, so it is information on Chicago buildings from 2018-2023. The data is on buildings larger than 50,000 square-feet and it tracks full-building energy use.
 
 
 ### Timeline
@@ -24,9 +34,8 @@ Project Plan Deadline: Thursday March 12 @ 11:59 PM
 
 Spring Break: March 14-22
 
-### Datasets
+Final Project Submission: May 3
 
-We are using the Chicago Energy Benchmarking Data reported from 2019-2024 all reporting data from the year prior, so it is information on Chicago buildings from 2018-2023. The data is on buildings larger than 50,000 square-feet and it tracks full-building energy use.
 
 ### Constraints
 
@@ -34,6 +43,9 @@ The dataset provides information on primary property type, but there could be bu
 Some missing datapoints
 Placards 
 
+
 ### Gaps
 
-After analyzing the year by year Chicago Energy Benchmark Report datasets, we have determined some gaps that may be present in the data. Since the Chicago Energy Rating System began in 2019, there is not extensive history on the energy efficiency of these buildings. This will make it difficult to determine trends and changes over the years. Making a building more energy efficient could be costly and timely, so even if there are changes being put into place for buildings, the actions taken may not be shown in their numbers yet. The Additionally, some buildings have been able to receive exemptions from receiving an energy score. Without information on exempt buildings, the data for those property types could be scewed. 
+After analyzing the year by year Chicago Energy Benchmark Report datasets, we have determined some gaps that may be present in the data. Since the Chicago Energy Rating System began in 2019, there is not extensive history on the energy efficiency of these buildings. This will make it difficult to determine trends and changes over the years. We will need to clean the datasets potentially dropping rows or columns if they do not have consistent information. 
+
+Making a building more energy efficient could be costly and timely, so even if there are changes being put into place for buildings, the actions taken may not be shown in their numbers yet. Additionally, some buildings have been able to receive exemptions from receiving an energy score. Without information on exempt buildings, the data for those property types could be scewed. We will be learning as we work on the project, do our ideas and processes will continue to evolve our plans as the semester progresses.
