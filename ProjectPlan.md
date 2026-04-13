@@ -33,11 +33,7 @@ This project builds on Chicago’s energy transparency policies, including the C
 
 ### Research/Business Question(s)
 
-How has monitoring energy use and posting public placards on buildings affected energy efficiency in large Chicago buildings?
-
-Are there property types or neighborhoods that were more likely to improve energy efficiency scores?
-
-What types of properties had better energy usage in the first place?
+Are there property types or neighborhoods that were more likely to have higher energy efficiency scores?
 
 Is there an association between energy rating and the number of environmental complaints?
 
@@ -48,13 +44,11 @@ Our project uses datasets from the Chicago Energy Benchmarking Data, which repor
 
 Each dataset represents the energy usage for a specific year but is released the following year after reporting and validation. The datasets used in this project include:
 
-- 2021 data (reported in 2023)
-- 2022 data (reported in 2023)
 - 2023 data (reported in 2024)
 - CDPH Environmental Complaints
 
 
-Combining these datasets allows us to analyze multi-year trends in building energy performance and track changes across building types and neighborhoods.
+Combining these datasets allows us to analyze 2023 data trends in building energy performance and track changes across building types and neighborhoods.
 
 
 ### Timeline
