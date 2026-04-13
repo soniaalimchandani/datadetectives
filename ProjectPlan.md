@@ -39,6 +39,8 @@ Are there property types or neighborhoods that were more likely to improve energ
 
 What types of properties had better energy usage in the first place?
 
+Is there an association between energy rating and the number of environmental complaints?
+
 
 ### Datasets
 
@@ -49,6 +51,8 @@ Each dataset represents the energy usage for a specific year but is released the
 - 2021 data (reported in 2023)
 - 2022 data (reported in 2023)
 - 2023 data (reported in 2024)
+- CDPH Environmental Complaints
+
 
 Combining these datasets allows us to analyze multi-year trends in building energy performance and track changes across building types and neighborhoods.
 
