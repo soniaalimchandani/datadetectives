@@ -46,9 +46,6 @@ Our project uses datasets from the Chicago Energy Benchmarking Data, which repor
 
 Each dataset represents the energy usage for a specific year but is released the following year after reporting and validation. The datasets used in this project include:
 
-- 2018 data (reported in 2019): First year including Chicago Energy Ratings.
-- 2019 data (reported in 2020)
-- 2020 data (reported in 2021)
 - 2021 data (reported in 2023)
 - 2022 data (reported in 2023)
 - 2023 data (reported in 2024)
