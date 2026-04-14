@@ -42,8 +42,12 @@ Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Time
 
 #### Analysis on Environmental Concerns: ####
 
-Completeness: 690 rows with blank 'Complaint Details.' These values being incomplete will make it harder to detect duplicate rows because identical details would be a high indicator of a duplicate complaint.
+Completeness: 690 rows with blank 'Complaint Details.' These values being incomplete will make it harder to detect duplicate rows because identical details would be a high indicator of a duplicate complaint. We also had to delete all columns that were missing a Complaint Date. There is no way to tell if those complaints were from 2023, so they had to be dropped. Those rows could have been from 2023 and would have influenced our results, but they were empty. 
 
 Synctactic Accuracy: Dates in date columns are in the same format. Our analysis did not find many typos or errors in this dataset.
 
 Semantic Accuracy: hard to verify if addresses or location entries are the true values because we cannot go and physically check.
+
+Consistency: Formatting and values in different columns are consistent. Most of the 
+
+Timeliness (Currency): This dataset is updated very frequently on a daily or every few days basis. The data from the set that we are using, however, is pretty fixed. We are only extracting the rows with comlaints from 2023 for our analysis. All of the complaints have a 'RESOLVED DATE,' so the information is current and was updated promptly upon resolution of the complaint.
