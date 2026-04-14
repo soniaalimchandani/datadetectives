@@ -27,8 +27,13 @@ To begin breaking down the ethical constraints, the first place to look is the d
 
 For our project, we are using two datasets from trustworthy public sources. The first dataset comes from the City of Chicago’s Energy Benchmarking Data, specifically the 2023 dataset (reported in 2024). This dataset is available through the Chicago Open Data Portal and is provided as a structured CSV file with standardized fields like energy usage, emissions, and building characteristics. The second dataset is the CDPH Environmental Complaints dataset, which is also sourced from the Chicago Open Data Portal. This dataset has a different structure, with more categorical and text-based fields related to complaint types, locations, and inspection details. Although both datasets are downloaded as CSV files, they differ in their schemas and the type of data they contain. The energy benchmarking dataset is more numeric and standardized, while the complaints dataset is more variable and descriptive. Both datasets were directly downloaded from the portal, ensuring they are reliable and up to date. Using two datasets with different structures allows us to bring together building-level energy data and environmental complaint data for a more well-rounded analysis.
 
+#### Links: ####
+
+
 ### Extraction and Enrichment ###
 
 ### Data Integration ###
 
 ### Data Quality ###
+
+Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Timeliness, and Completeness.
