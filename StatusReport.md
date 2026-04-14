@@ -17,11 +17,15 @@ If we look at the DataONE Data lifecycle, we can map our project down the chart.
 
 ### File Storage and Organization ###
 
+For our project, we’re working with two datasets saved as CSV files. Each file is a table where rows represent individual records and columns represent different attributes, which makes them easy to open and work with in tools like Excel and OpenRefine. The data includes a mix of types, like numbers, text, and some date-related fields. One important thing is that both files share a common columns of Longitude and Latitude which may allow us to connect them. In terms of organization, we’re treating the two CSVs like related tables. Instead of combining everything into one big file right away, we keep them separate and link them when needed using that shared key. This makes the data easier to manage and avoids duplicating information. We also will try to keep things consistent across both files, like making sure column names and formats match, so merging them later is straightforward. Before doing any analysis, we will clean the data by fixing formatting issues, handling missing values, and removing duplicates.
+
 ### Ethical Data Handling ###
 
 To begin breaking down the ethical constraints, the first place to look is the data collection. From our analysis, the data from both datasets was acquired ethically and legally. All complaints were submitted voluntarily. Is the address corresponding to resident’s home or the business they are reporting? If it is their home than that could be considered an identifier and should be pseudo’d or perturbed to keep reporters anonymous. Concern for reputation of neighborhoods because ratings and complaints could be subjective.
 
 ### Data Collection and Acquisition ###
+
+For our project, we are using two datasets from trustworthy public sources. The first dataset comes from the City of Chicago’s Energy Benchmarking Data, specifically the 2023 dataset (reported in 2024). This dataset is available through the Chicago Open Data Portal and is provided as a structured CSV file with standardized fields like energy usage, emissions, and building characteristics. The second dataset is the CDPH Environmental Complaints dataset, which is also sourced from the Chicago Open Data Portal. This dataset has a different structure, with more categorical and text-based fields related to complaint types, locations, and inspection details. Although both datasets are downloaded as CSV files, they differ in their schemas and the type of data they contain. The energy benchmarking dataset is more numeric and standardized, while the complaints dataset is more variable and descriptive. Both datasets were directly downloaded from the portal, ensuring they are reliable and up to date. Using two datasets with different structures allows us to bring together building-level energy data and environmental complaint data for a more well-rounded analysis.
 
 ### Extraction and Enrichment ###
 
