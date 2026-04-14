@@ -32,9 +32,6 @@ Environmental Complaints: https://data.cityofchicago.org/Environment-Sustainable
 
 2023 Energy Benchmark Data: https://data.cityofchicago.org/Environment-Sustainable-Development/Chicago-Energy-Benchmarking-2023-Data-Reported-in-/3a36-5x9a/about_data
 
-### Extraction and Enrichment ###
-
-### Data Integration ###
 
 ### Data Quality ###
 
@@ -51,3 +48,22 @@ Semantic Accuracy: hard to verify if addresses or location entries are the true 
 Consistency: Formatting and values in different columns are consistent. Most of the 
 
 Timeliness (Currency): This dataset is updated very frequently on a daily or every few days basis. The data from the set that we are using, however, is pretty fixed. We are only extracting the rows with comlaints from 2023 for our analysis. All of the complaints have a 'RESOLVED DATE,' so the information is current and was updated promptly upon resolution of the complaint.
+
+### Next Steps ###
+
+In our timeline, our aim was to finish extraction and enrichment, data integration, data cleaning, and start on workflow automation and provenance. However, since we got busier than we anticipated, we were only able to finish the objects aligning with modules 1-4. Since extraction and enrichment is optional, we don’t believe that it would be necessary for our project, but we will evaluate our need for it again as we progress with our project. Our next steps are to focus on data cleaning and data integration and then work on workflow automation. Below is our updated timeline. 
+
+## Project Timeline
+
+### Week of April 12–18
+- **(Sonia)** Data integration (cf. Module 7–8): Integration of datasets (Python/Pandas or SQL)  
+- **(Both)** Data cleaning (cf. Module 11–12): Describe any data cleaning methods applied (e.g., missing values, outliers, syntactic or semantic cleaning)  
+- **(Both)** Workflow automation and provenance (cf. Module 13): Provide an automated end-to-end workflow  
+
+### Week of April 19–25
+- **(Sonia)** Reproducibility and provenance (cf. Module 14): Your project must provide sufficient information to allow someone else to reproduce your workflow and analysis  
+- **(Olivia)** Metadata and data documentation (cf. Module 15): Metadata and data documentation to support discovery, understandability, and reuse  
+
+### Week of April 26 – May 3
+- **(Both)** Work on putting together final project and submitting
+
