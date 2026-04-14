@@ -51,13 +51,13 @@ Timeliness (Currency): This dataset is updated very frequently on a daily or eve
 
 #### Analysis on Building Efficiency Scores Data: ####
 
-Completeness:
+Completeness: There are 353 blank Chicago Energy Ratings in the dataset for buildings that were exempt from reporting their information. Many columns in the dataset are missing information. We will most likely have to drop rows that were exempt from being rated and for buildings that did not report their information, so it will hurt the completeness and analysis for our final report.
 
-Synctactic Accuracy:
+Synctactic Accuracy: Property Names are not all business or property names, some are just addresses. Address values have different formats and are written out in various ways. Community Areas seem to be synctactically accurate which is one of the most important columns for our purposes.
 
-Semantic Accuracy:
+Semantic Accuracy: To determine semantic accuracy of the data, we need to compare column values to true values. This is hard to verify as we cannot check these things. 
 
-Consistency:
+Consistency: All rows have community areas, addresses, and property types. Not all buildings that submitted for a rating received one though. There are blank columns and '0.0' scores which is an inconsistency.
 
 Timeliness (Currency):
 
