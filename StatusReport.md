@@ -21,7 +21,7 @@ For our project, we’re working with two datasets saved as CSV files. Each file
 
 ### Ethical Data Handling ###
 
-To begin breaking down the ethical constraints, the first place to look is the data collection. From our analysis, the data from both datasets was acquired ethically and legally. All complaints were submitted voluntarily. Is the address corresponding to resident’s home or the business they are reporting? If it is their home than that could be considered an identifier and should be pseudo’d or perturbed to keep reporters anonymous. Concern for reputation of neighborhoods because ratings and complaints could be subjective.
+To begin breaking down the ethical constraints, the first place to look is the data collection. From our analysis, the data from both datasets was acquired ethically and legally. All complaints were submitted voluntarily. Addresses may be a direct or quasi identifier of people submitting complaints if they are putting in home addresses, but specific street addresses are not needed for our final deliverable, so this shouldn't be an issue. The only result of our final project that is an ethical concern is if we find certain neighborhoods to have a high number of environmental complaints and low energy efficiency scores because ratings and complaints could be subjective.
 
 ### Data Collection and Acquisition ###
 
@@ -37,23 +37,35 @@ Environmental Complaints: https://data.cityofchicago.org/Environment-Sustainable
 
 Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Timeliness, and Completeness.
 
-#### Analysis on Environmental Concerns: ####
+#### Analysis on Environmental Concerns Data: ####
 
 Completeness: 690 rows with blank 'Complaint Details.' These values being incomplete will make it harder to detect duplicate rows because identical details would be a high indicator of a duplicate complaint. We also had to delete all columns that were missing a Complaint Date. There is no way to tell if those complaints were from 2023, so they had to be dropped. Those rows could have been from 2023 and would have influenced our results, but they were empty. 
 
-Synctactic Accuracy: Dates in date columns are in the same format. Our analysis did not find many typos or errors in this dataset.
+Synctactic Accuracy: Dates in date columns are in the same format. Our analysis did not find many typos or errors in this dataset. All values in columns correspond with the domain that those columns cover.
 
-Semantic Accuracy: hard to verify if addresses or location entries are the true values because we cannot go and physically check.
+Semantic Accuracy: To determine semantic accuracy of the data, we need to compare column values to true values. This is hard to verify as we cannot check these things. 
 
-Consistency: Formatting and values in different columns are consistent. Most of the 
+Consistency: Formatting and values in different columns are consistent. The addresses all have street numbers, street directions, street names, and street types making the address information very consistent. Not all complaints have complaint details which is a big inconsistency in the data. 
 
 Timeliness (Currency): This dataset is updated very frequently on a daily or every few days basis. The data from the set that we are using, however, is pretty fixed. We are only extracting the rows with comlaints from 2023 for our analysis. All of the complaints have a 'RESOLVED DATE,' so the information is current and was updated promptly upon resolution of the complaint.
+
+#### Analysis on Building Efficiency Scores Data: ####
+
+Completeness:
+
+Synctactic Accuracy:
+
+Semantic Accuracy:
+
+Consistency:
+
+Timeliness (Currency):
 
 ### Next Steps ###
 
 In our timeline, our aim was to finish extraction and enrichment, data integration, data cleaning, and start on workflow automation and provenance. However, since we got busier than we anticipated, we were only able to finish the objects aligning with modules 1-4. Since extraction and enrichment is optional, we don’t believe that it would be necessary for our project, but we will evaluate our need for it again as we progress with our project. Our next steps are to focus on data cleaning and data integration and then work on workflow automation. Below is our updated timeline. 
 
-## Project Timeline
+## Remaining Project Timeline
 
 ### Week of April 12–18
 - **(Sonia)** Data integration (cf. Module 7–8): Integration of datasets (Python/Pandas or SQL)  
