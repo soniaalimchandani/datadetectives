@@ -39,3 +39,11 @@ Environmental Complaints: https://data.cityofchicago.org/Environment-Sustainable
 ### Data Quality ###
 
 Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Timeliness, and Completeness.
+
+#### Analysis on Environmental Concerns: ####
+
+Completeness: 690 rows with blank 'Complaint Details.' These values being incomplete will make it harder to detect duplicate rows because identical details would be a high indicator of a duplicate complaint.
+
+Synctactic Accuracy: Dates in date columns are in the same format. Our analysis did not find many typos or errors in this dataset.
+
+Semantic Accuracy: hard to verify if addresses or location entries are the true values because we cannot go and physically check.
