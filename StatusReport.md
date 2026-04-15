@@ -57,9 +57,9 @@ Synctactic Accuracy: Property Names are not all business or property names, some
 
 Semantic Accuracy: To determine semantic accuracy of the data, we need to compare column values to true values. This is hard to verify as we cannot check these things. 
 
-Consistency: All rows have community areas, addresses, and property types. Not all buildings that submitted for a rating received one though. There are blank columns and '0.0' scores which is an inconsistency.
+Consistency: All rows have community areas, addresses, and property types. Not all buildings that submitted for a rating received one though. There are blank columns and '0.0' scores which is an inconsistency. All buildings that reported their information should have received a score. Also because a lot of columns are missing energy usage information we don't know how everything is weighed to give the buildings ratings.
 
-Timeliness (Currency):
+Timeliness (Currency): The dataset has 2023 information and was reported in 2024. The dataset has not been updated since 2025 as it is fixed.
 
 ### Next Steps ###
 
