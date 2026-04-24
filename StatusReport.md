@@ -5,6 +5,19 @@
 ### End Deliverable: ### 
 Report with all research and analysis + visualization showing if energy scores for businesses in different neighborhoods are associated with number of energy complaints in those neighborhoods.
 
+## Team Member Contributions to Status Report
+
+### Sonia
+- File Storage and Organization  
+- Data Collection and Acquisition  
+- Next Steps  
+- Remaining Project Timeline  
+
+### Olivia
+- Update to project plan  
+- Ethical Data Handling  
+- Data Quality  
+
 ## Update to Project Plan ##
 Changed original project plan by adding additional dataset about environmental reports in the city of Chicago. This dataset had reports dating back to the 1990s, but we only need info from 2023. We also decided to only use one year of the business energy efficiency score datasets as one year is sufficient for our research question and will be much more manageable for us to analyze.
 
