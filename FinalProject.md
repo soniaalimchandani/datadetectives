@@ -36,6 +36,8 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 
 # Data Cleaning
 
+Olivia - describe cleaning of environmental complaints data in OpenRefine & provide JSON receipts
+
 # Findings
 
 # Future Work
@@ -43,5 +45,9 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 # Challenges
 
 # Reproducing
+
+# Metadata
+
+DCAT
 
 # References
