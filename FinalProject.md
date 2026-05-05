@@ -25,6 +25,93 @@ Analysis based on visualizations and final takeaways
 
 # Data Profile
 
+This project combines two open municipal datasets from the City of Chicago to investigate whether there is an association between building energy efficiency (ENERGY STAR ratings) and the number of environmental complaints reported in surrounding areas. Both datasets are structured tabular datasets in CSV format and are processed through a fully automated Snakemake workflow.
+
+## Dataset 1: Environmental Complaints
+
+Location in repository:
+
+data/raw/environmental_complaints.csv
+
+data/cleaned/cleaned_environmental_complaints_2023.csv
+
+This dataset contains individual environmental complaint records submitted by residents in Chicago. Each row represents a single complaint event.
+
+Key variables include:
+
+- Complaint ID (unique identifier)
+- Complaint type (e.g., sanitation, air quality, noise)
+- Complaint date and resolution date
+- Address information
+- Latitude and longitude coordinates
+- Inspector and resolution metadata
+
+Characteristics:
+
+- High granularity (individual complaint-level observations)
+- Contains categorical, temporal, and geospatial variables
+- Some missing or inconsistent address and coordinate fields
+- Requires spatial aggregation to derive neighborhood-level complaint counts
+
+Ethical and Legal Constraints:
+
+- Publicly available under Chicago’s open data portal licensing
+- No personally identifiable information is included
+- However, fine-grained geolocation data could potentially be sensitive when combined with other datasets
+
+## Dataset 2: Energy Benchmarking Data
+
+Location in repository:
+
+data/raw/energy_benchmark_2023.csv
+data/cleaned/cleaned_energy_benchmarking.csv
+
+This dataset contains building-level energy performance data for Chicago properties. Each row corresponds to a single building.
+
+Key variables include:
+
+- Property name and address
+- Building type (commercial, residential, institutional, etc.)
+- ENERGY STAR score (1–100 efficiency rating)
+- Greenhouse gas emissions (CO₂ equivalent)
+- Energy consumption indicators
+- Latitude and longitude coordinates
+
+The ENERGY STAR score is the primary variable of interest, representing energy efficiency.
+
+Characteristics:
+
+- Building-level granularity
+- Mix of numeric (energy use, emissions, score) and categorical variables (building type)
+- Some missing values in energy performance indicators
+- Spatial attributes enable geolocation-based merging with complaint data
+
+Ethical and Legal Constraints:
+
+- Publicly released by the City of Chicago under open data policies
+- No individual-level personal data is included
+- Data is used for research and educational purposes only
+
+## Data Integration
+
+The two datasets are joined using a spatial approximation approach based on rounded latitude and longitude values (to 3 decimal places). This allows linking environmental complaints to nearby buildings with recorded energy performance.
+
+`data/merged_dataset/integrated_dataset.csv`
+
+##Relationship to Research Question
+
+The integration of these datasets directly supports the research question:
+
+**Is there an association between energy rating and the number of environmental complaints?**
+
+This is operationalized as follows:
+
+- Environmental complaints are aggregated geographically to represent local environmental burden
+- ENERGY STAR scores represent building-level energy efficiency
+- The merged dataset allows comparison of complaint frequency against nearby energy performance
+
+This enables analysis of whether areas with lower energy efficiency (lower ENERGY STAR scores) tend to experience higher numbers of environmental complaints, suggesting a potential relationship between infrastructure performance and reported environmental issues.
+
 # Data Quality
 Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Timeliness, and Completeness.
 
