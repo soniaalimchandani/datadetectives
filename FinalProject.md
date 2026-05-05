@@ -2,6 +2,7 @@
 
 # Contributors
 - Sonia Alimchandani
+-   Data Cleaning 
 - Olivia Cieplak
 
 # Summary
@@ -40,6 +41,17 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 # Data Cleaning
 
 Olivia - describe cleaning of environmental complaints data in OpenRefine & provide JSON receipts
+
+##Energy Benchmarking 2023 Data
+For data cleaning for the Energy Benchmarking 2023 data, we first removed approximately 854 incomplete records, about 25% of the dataset. These rows had a Reporting Status of either “Not Submitted” or “Not Covered 2024” and were missing important fields such as floor area, energy use, EUI, GHG emissions, and year built. Since these were structural non-reporters rather than data errors, we excluded them from the main analysis. This improved completeness by removing records with excessive missing data. Afterward, we dropped the Reporting Status column because all remaining rows were marked as “Submitted,” making it redundant and improving consistency.
+
+We then removed columns with excessive missing values or limited relevance. `All Other Fuel Use (kBtu)` (100% null), `District Steam Use (kBtu)` (98.5% null), and `District Chilled Water Use (kBtu)` (97.5% null) were dropped because they were nearly empty. We also removed `Row_ID` since the dataset already included an `ID` column. Columns such as `Electricity Use (kBtu)`, `Natural Gas Use (kBtu)`, and `Water Use (kGal)` were removed because they were either highly incomplete or less useful than summary measures like EUI and GHG emissions. We also dropped `Source EUI`, `Weather Normalized Source EUI`, and `Weather Normalized Site EUI`, keeping only `Site EUI` to reduce redundancy and improve consistency. The `Location` column was removed since latitude and longitude were already available separately.
+
+We standardized the `Exempt From Chicago Energy Rating` column by converting values to consistent TRUE or FALSE entries, improving syntactic accuracy. Records marked TRUE were removed because exempt properties were outside the scope of our analysis and often had missing Chicago Energy Ratings. After filtering, we deleted the column since it was no longer needed.
+
+To improve formatting consistency, we removed commas from numeric fields such as `Gross Floor Area - Buildings (sq ft)` and `Total GHG Emissions (Metric Tons CO2e)` using GREL transformations so values could be treated correctly as numeric data. We also removed periods from `Property Name` and `Address` fields and fixed inconsistent capitalization in `Property Name`, `Address`, `Community Area`, and `Primary Property Type`. These steps improved syntactic accuracy and consistency across the dataset.
+
+Lastly, we reviewed latitude and longitude values for accuracy. Two addresses initially appeared outside Chicago, but both belonged to records already removed under “Not Submitted” or “Not Covered 2024,” so no manual corrections were needed. For the environmental complaints dataset, we also removed rows missing Complaint Dates since we could not verify if they belonged to the 2023 analysis period. This improved completeness and timeliness. Although 690 rows still had blank Complaint Details, we kept them because the remaining complaint information was still useful for identifying patterns.
 
 # Findings
 
