@@ -1,0 +1,192 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COMPLAINT DATE",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column COMPLAINT DATE using expression value.toDate()"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "COMPLAINT DATE",
+          "expression": "value",
+          "columnName": "COMPLAINT DATE",
+          "from": 726105600000,
+          "to": 1460123280000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "COMPLAINT DATE",
+          "expression": "value",
+          "columnName": "COMPLAINT DATE",
+          "from": 1462492800000,
+          "to": 1491680232000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "COMPLAINT DATE",
+          "expression": "value",
+          "columnName": "COMPLAINT DATE",
+          "from": 1499212800000,
+          "to": 1649464992000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-keep-matched",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "COMPLAINT DATE",
+          "expression": "value",
+          "columnName": "COMPLAINT DATE",
+          "from": 1670586768000,
+          "to": 1704689658000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Keep matching rows"
+  },
+  {
+    "op": "core/row-keep-matched",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "timerange",
+          "name": "COMPLAINT DATE",
+          "expression": "value",
+          "columnName": "COMPLAINT DATE",
+          "from": 1672444800000,
+          "to": 1704067200000,
+          "selectTime": true,
+          "selectNonTime": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Keep matching rows"
+  },
+  {
+    "op": "core/row-duplicate-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "COMPLAINT ID",
+          "expression": "value",
+          "columnName": "COMPLAINT ID",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "601448542",
+                "l": "601448542"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "criteria": [
+      "COMPLAINT ID",
+      "COMPLAINT TYPE",
+      "ADDRESS",
+      "COMPLAINT DATE",
+      "COMPLAINT DETAIL",
+      "RESOLUTION",
+      "RESOLVED DATE"
+    ],
+    "description": "Remove duplicate rows"
+  },
+  {
+    "op": "core/row-duplicate-removal",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "criteria": [
+      "COMPLAINT ID",
+      "COMPLAINT TYPE",
+      "ADDRESS",
+      "INSPECTOR",
+      "COMPLAINT DATE",
+      "COMPLAINT DETAIL",
+      "DATA SOURCE",
+      "RESOLUTION",
+      "RESOLVED DATE",
+      "LATITUDE",
+      "LONGITUDE",
+      "LOCATION"
+    ],
+    "description": "Remove duplicate rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RESOLVED DATE",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column RESOLVED DATE using expression value.toDate()"
+  }
+]
