@@ -64,6 +64,7 @@ Ethical and Legal Constraints:
 Location in repository:
 
 data/raw/energy_benchmark_2023.csv
+
 data/cleaned/cleaned_energy_benchmarking.csv
 
 This dataset contains building-level energy performance data for Chicago properties. Each row corresponds to a single building.
