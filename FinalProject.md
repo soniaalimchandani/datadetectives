@@ -1,8 +1,11 @@
-# Title
+# Environmental Complaints and ENERGY Efficiency Scores in Chicago
 
 # Contributors
+- Sonia Alimchandani
+- Olivia Cieplak
 
 # Summary
+For our project we took two datasets from the City of Chicago Data Portal 
 
 # Data Profile
 
