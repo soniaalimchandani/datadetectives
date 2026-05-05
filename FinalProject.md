@@ -5,6 +5,8 @@
 - Data Cleaning (Energy Benchmarking 2023 Data)
 - 
 ## Olivia Cieplak
+- Summary
+- Data Quality
 
 # Summary
 For our project we took two datasets from the City of Chicago Data Portal to find information on ENERGY STAR Scores of buildings in Chicago and if there was a relation between these scores and Environmental Complaints in the city. Our main research question was: ‘Is there an association between energy rating and the number of environmental complaints for different neighborhoods in Chicago?’.  To answer this question, we took datasets through the data lifecycle to generate insights and visualizations. 
