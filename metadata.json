@@ -1,0 +1,51 @@
+{
+    "@type": "dcat:Dataset",
+    "accessLevel": "public",
+    "accrualPeriodicity": "irregular",
+  
+    "contactPoint": [
+    {
+        "@type": "vcard:Individual",
+        "fn": "Olivia Cieplak",
+        "hasEmail": "mailto:cieplak3@illinois.edu"
+    },
+    {
+        "@type": "vcard:Individual",
+        "fn": "Sonia Alimchandani",
+        "hasEmail": "mailto:salim5@illinois.edu"
+    }
+],
+    "description": "Collaborative project using course concepts to explore relationship between building energy scores and environmental complaints in Chicago. Created for IS 477 at University of Illinois Urbana-Champaign.",
+    "distribution":
+    [
+        {
+            "@type": "dcat:Distribution",
+            "accessURL": "https://github.com/soniaalimchandani/datadetectives",
+            "description": "GitHub Repository containing processing script, visualization notebooks, analysis, and results.",
+            "mediaType": "text/html"
+        }
+    ],
+    "identifier": "CHI-ENERGY-EFF-PROJECT",
+    "keyword":
+    [
+        "Environmental Health",
+        "Sustainability",
+        "Chicago Neighborhoods",
+        "Building Benchmarking 2023",
+        "Energy Efficiency",
+        "Data Analysis Project"
+    ],
+    "landingPage": "https://github.com/soniaalimchandani/datadetectives",
+    "modified": "2026-05-05",
+    "publisher":
+    {
+        "@type": "org:Organization",
+        "name": "University of Illinois Urbana-Champaign",
+        "subOrganizationOf":
+        {
+            "@type": "org:Organization",
+            "name": "IS 477"
+        }
+    },
+    "title": "Chicago Energy and Environmental Health Project"
+}
