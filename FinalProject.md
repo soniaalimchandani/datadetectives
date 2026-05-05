@@ -1,9 +1,10 @@
 # Environmental Complaints and ENERGY Efficiency Scores in Chicago
 
 # Contributors
-- Sonia Alimchandani
--   Data Cleaning 
-- Olivia Cieplak
+## Sonia Alimchandani
+- Data Cleaning (Energy Benchmarking 2023 Data)
+- 
+## Olivia Cieplak
 
 # Summary
 For our project we took two datasets from the City of Chicago Data Portal 
