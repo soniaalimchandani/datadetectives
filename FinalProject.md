@@ -99,7 +99,7 @@ The two datasets are joined using a spatial approximation approach based on roun
 
 `data/merged_dataset/integrated_dataset.csv`
 
-##Relationship to Research Question
+## Relationship to Research Question
 
 The integration of these datasets directly supports the research question:
 
