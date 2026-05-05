@@ -42,7 +42,8 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 
 Olivia - describe cleaning of environmental complaints data in OpenRefine & provide JSON receipts
 
-##Energy Benchmarking 2023 Data
+## Energy Benchmarking 2023 Data
+
 For data cleaning for the Energy Benchmarking 2023 data, we first removed approximately 854 incomplete records, about 25% of the dataset. These rows had a Reporting Status of either “Not Submitted” or “Not Covered 2024” and were missing important fields such as floor area, energy use, EUI, GHG emissions, and year built. Since these were structural non-reporters rather than data errors, we excluded them from the main analysis. This improved completeness by removing records with excessive missing data. Afterward, we dropped the Reporting Status column because all remaining rows were marked as “Submitted,” making it redundant and improving consistency.
 
 We then removed columns with excessive missing values or limited relevance. `All Other Fuel Use (kBtu)` (100% null), `District Steam Use (kBtu)` (98.5% null), and `District Chilled Water Use (kBtu)` (97.5% null) were dropped because they were nearly empty. We also removed `Row_ID` since the dataset already included an `ID` column. Columns such as `Electricity Use (kBtu)`, `Natural Gas Use (kBtu)`, and `Water Use (kGal)` were removed because they were either highly incomplete or less useful than summary measures like EUI and GHG emissions. We also dropped `Source EUI`, `Weather Normalized Source EUI`, and `Weather Normalized Site EUI`, keeping only `Site EUI` to reduce redundancy and improve consistency. The `Location` column was removed since latitude and longitude were already available separately.
