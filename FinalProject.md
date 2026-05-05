@@ -12,7 +12,9 @@ Once we determined what datasets we were interested in analyzing for the project
 - Merged based on coordinates,
 - distance of points,
 - how many rows we ended up with after merging…
- Summarize visualization creation
+
+
+Summarize visualization creation
 -	Making neighborhoods based on coordinates
 -	Etc
 Analysis based on visualizations and final takeaways
