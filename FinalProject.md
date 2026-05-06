@@ -9,6 +9,7 @@
 ## Olivia Cieplak
 - Summary
 - Data Quality
+- Data Cleaning (CDPH Environmental Complaints)
 - Metadata
 
 # Summary
@@ -142,8 +143,7 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 
 # Data Cleaning
 
-Olivia - describe cleaning of environmental complaints data in OpenRefine & provide JSON receipts
-For data cleaning of the CDPH Environmental Complaints data, we first removed all rows without complaint dates
+For data cleaning of the CDPH Environmental Complaints data, we first removed all rows without complaint dates. Then we removed all rows with complaint dates outside of 2023 as the other dataset uses only 2023 data, so we wanted the timeframes to match between the datasets.
 
 ## Energy Benchmarking 2023 Data
 
