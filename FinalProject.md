@@ -2,6 +2,7 @@
 
 # Contributors
 ## Sonia Alimchandani
+- Summary
 - Data Cleaning (Energy Benchmarking 2023 Data)
 - Reproducing
 ## Olivia Cieplak
@@ -11,10 +12,7 @@
 
 # Summary
 For our project we took two datasets from the City of Chicago Data Portal to find information on ENERGY STAR Scores of buildings in Chicago and if there was a relation between these scores and Environmental Complaints in the city. Our main research question was: ‘Is there an association between energy rating and the number of environmental complaints for different neighborhoods in Chicago?’.  To answer this question, we took datasets through the data lifecycle to generate insights and visualizations. 
-Once we determined what datasets we were interested in analyzing for the project, we looked for what aspects of the sets were connected and how we could relate features of the sets together. We conceptualized our research question after consulting with each other and course instructors. After we had formed our concept, we extracted the relevant observations from our datasets. For the Environmental Concerns dataset, we only wanted complaints from 2023 as the ENERGY STAR Score dataset we used was from 2023. When we had the appropriate data for our research, we finished cleaning and processing the data which we will explain in greater detail later in the report. The final step we had to perform in order to begin our analysis was merging the datasets. A spatial join was performed by matching complaint records to the nearest benchmarked building based on latitude and longitude proximity. In cases where exact coordinate matches were not available, a distance threshold (such as within a small radius or matching ZIP code support) was used to associate complaints with nearby buildings. This integration allows us to analyze whether buildings with higher energy usage or emissions are located in areas with more environmental complaints. It also helps identify patterns between sustainability performance and community-reported environmental concerns across Chicago neighborhoods.
-- Merged based on coordinates,
-- distance of points,
-- how many rows we ended up with after merging…
+Once we determined what datasets we were interested in analyzing for the project, we looked for what aspects of the sets were connected and how we could relate features of the sets together. We conceptualized our research question after consulting with each other and course instructors. After we had formed our concept, we extracted the relevant observations from our datasets. For the Environmental Concerns dataset, we only wanted complaints from 2023 as the ENERGY STAR Score dataset we used was from 2023. When we had the appropriate data for our research, we finished cleaning and processing the data which we will explain in greater detail later in the report. The final step we had to perform in order to begin our analysis was merging the datasets. A spatial join was performed by matching complaint records to the nearest benchmarked building based on latitude and longitude proximity. In cases where exact coordinate matches were not available, a distance threshold (such as within a small radius or matching ZIP code support) was used to associate complaints with nearby buildings. This integration allows us to analyze whether buildings with higher energy usage or emissions are located in areas with more environmental complaints. It also helps identify patterns between sustainability performance and community-reported environmental concerns across Chicago neighborhoods. The final merged dataset is 412 rows, with 26 columns.
 
 
 Summarize visualization creation
