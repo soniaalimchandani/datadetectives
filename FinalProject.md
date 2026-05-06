@@ -143,6 +143,7 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 # Data Cleaning
 
 Olivia - describe cleaning of environmental complaints data in OpenRefine & provide JSON receipts
+For data cleaning of the CDPH Environmental Complaints data, we first removed all rows without complaint dates
 
 ## Energy Benchmarking 2023 Data
 
