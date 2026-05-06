@@ -146,7 +146,9 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 ## CDPH Environmental Complaints Data
 For data cleaning of the CDPH Environmental Complaints data, we first made sure all dates were in the same formatting in OpeRefine by converting all values in the complaint date column to standardized Date values. Then we removed all rows without complaint dates. Then we removed all rows with complaint dates outside of 2023 as the other dataset uses only 2023 data, so we wanted the timeframes to match between the datasets. The dataset originally had over 50,000 rows, but this contained information ranging from 1993-2025. After removing other years and only keeping complaints reported from 2023, we were left with 1,994 rows. 
 
-The values in most columns seemed to all have the same syntax, we suspect most questions on the complaint form had a dropdown menu to submit address, complaint type, and more. The 'COMPLAINT DETAIL', though, were typed out by the person submitting the complaints, so we used this column to look for duplicate rows. If an observation had the exact same 'COMPLAINT DETAIL', 'COMPLAINT DATE', 'ADDRESS', and 'COMPLAINT ID', we considered those duplicate rows and dropped them from the dataset as well.
+The values in most columns seemed to all have the same syntax, we suspect most questions on the complaint form had a dropdown menu to submit address, complaint type, and more. The `COMPLAINT DETAIL`, though, were typed out by the person submitting the complaints, so we used this column to look for duplicate rows. If an observation had the exact same `COMPLAINT DETAIL`, `COMPLAINT DATE`, `ADDRESS`, and `COMPLAINT ID`, we considered those duplicate rows and dropped them from the dataset as well. After removing duplicate complaints, our final Environmental Complaints dataset was clean with 1,876 rows remaining. These observations were all unique complaints from 2023 with standardized syntactics ready to be used for further analysis.
+
+The OpenRefine json history is linked in the repository.
 
 ## Energy Benchmarking 2023 Data
 
