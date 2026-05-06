@@ -148,7 +148,7 @@ For data cleaning of the CDPH Environmental Complaints data, we first made sure 
 
 The values in most columns seemed to all have the same syntax, we suspect most questions on the complaint form had a dropdown menu to submit address, complaint type, and more. The `COMPLAINT DETAIL`, though, were typed out by the person submitting the complaints, so we used this column to look for duplicate rows. If an observation had the exact same `COMPLAINT DETAIL`, `COMPLAINT DATE`, `ADDRESS`, and `COMPLAINT ID`, we considered those duplicate rows and dropped them from the dataset as well. After removing duplicate complaints, our final Environmental Complaints dataset was clean with 1,876 rows remaining. These observations were all unique complaints from 2023 with standardized syntactics ready to be used for further analysis.
 
-The OpenRefine json history is linked in the repository.
+The OpenRefine json history is linked in the repository: environmentalcomplaintshistory.json
 
 ## Energy Benchmarking 2023 Data
 
@@ -179,6 +179,8 @@ The last challenge was actually combining the datasets. The complaints data is a
 
 # Metadata
 
-DCAT
+Machine Readable Descriptive metadata file describing project in conformance with DCAT is linked in the repository: metadata.json
+
+### Data Dictionary
 
 # References
