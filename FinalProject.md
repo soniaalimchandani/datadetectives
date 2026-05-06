@@ -16,11 +16,8 @@
 For our project we took two datasets from the City of Chicago Data Portal to find information on ENERGY STAR Scores of buildings in Chicago and if there was a relation between these scores and Environmental Complaints in the city. Our main research question was: ‘Is there an association between energy rating and the number of environmental complaints for different neighborhoods in Chicago?’.  To answer this question, we took datasets through the data lifecycle to generate insights and visualizations. 
 Once we determined what datasets we were interested in analyzing for the project, we looked for what aspects of the sets were connected and how we could relate features of the sets together. We conceptualized our research question after consulting with each other and course instructors. After we had formed our concept, we extracted the relevant observations from our datasets. For the Environmental Concerns dataset, we only wanted complaints from 2023 as the ENERGY STAR Score dataset we used was from 2023. When we had the appropriate data for our research, we finished cleaning and processing the data which we will explain in greater detail later in the report. The final step we had to perform in order to begin our analysis was merging the datasets. A spatial join was performed by matching complaint records to the nearest benchmarked building based on latitude and longitude proximity. In cases where exact coordinate matches were not available, a distance threshold (such as within a small radius or matching ZIP code support) was used to associate complaints with nearby buildings. This integration allows us to analyze whether buildings with higher energy usage or emissions are located in areas with more environmental complaints. It also helps identify patterns between sustainability performance and community-reported environmental concerns across Chicago neighborhoods. The final merged dataset is 412 rows, with 26 columns.
 
+To derive final insights and analyze our data, we created a few visualizations of data looking for trends and associations to draw conclusions. These will be explained in greater detail later in the report.
 
-Summarize visualization creation
--	Making neighborhoods based on coordinates
--	Etc
-Analysis based on visualizations and final takeaways
 
 
 # Data Profile
@@ -182,5 +179,28 @@ The last challenge was actually combining the datasets. The complaints data is a
 Machine Readable Descriptive metadata file describing project in conformance with DCAT is linked in the repository: metadata.json
 
 ### Data Dictionary
+| Column | Type | Description |
+|--------|-------|-------------|
+| **COMPLAINT ID** | Integer | Unique identifier for the environmental complaint |
+| **COMPLAINT TYPE** | String | The type of complaint reported (Noise, Pollution, etc.) |
+| **ADDRESS** | String | Street address linked with **environmental complaint** |
+| **STREET NUMBER FROM** | Integer/String | Starting street number for location range |
+| **STREET NUMBER TO** | Integer/String | Ending street number for location range (usually NaN if single address provided) |
+| **DIRECTION** | String | Direction prefix of street (N, E, S, or W) |
+| **STREET NAME** | String | Name of street where complaint is located |
+| **STREET TYPE** | String | Suffix of street |
+| **INSPECTOR** | Integer | ID of complaint inspector |
+| **COMPLAINT DATE** | DateTime | Date when complaint was filed |
+| **LOCATION** | String | Geospatial point coordinates of **environmental complaint** |
+| **Property Name** | String | Name of building or property |
+| **Address** | String | Address for building linked with **energy report** information |
+| **ZIP Code** | Integer | 5-digit postal code of business/property |
+| **Primary Property Type** | String | Main usage category of building from energy report |
+| **ENERGY STAR Score** | Float | 1-100 rating of building energy efficiency |
+| **Total GHG Emissions (Metric Tons CO2e)** | Float | Total greenhouse gas emmissions by property |
+| **energy_lat** | Float | Latitude coordinate for **energy reporting** business/property |
+| **energy_lon** | Float | Longitude coordinate for **energy reporting** business/property |
+| **neighborhood** | String | Chicago community area/name of property; derived from latitude and longitude values |
+
 
 # References
