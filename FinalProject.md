@@ -4,6 +4,7 @@
 ## Sonia Alimchandani
 - Summary
 - Data Cleaning (Energy Benchmarking 2023 Data)
+- Challenges
 - Reproducing
 ## Olivia Cieplak
 - Summary
@@ -160,6 +161,13 @@ Lastly, we reviewed latitude and longitude values for accuracy. Two addresses in
 # Future Work
 
 # Challenges
+A lot of the challenges in this project weren’t really about the analysis itself, but more about getting everything to run smoothly and consistently. One of the biggest issues we ran into was making sure the workflow worked across different environments. For example, some libraries like plotly worked fine in our Jupyter Notebook, but when we tried to run the same code through Snakemake, it would crash because those packages weren’t installed in that environment. That led to errors like ModuleNotFoundError, which were frustrating at first because the code itself was fine. We ended up fixing this by being more explicit about dependencies and creating a requirements.txt file so everything needed is clearly listed and can be installed beforehand.
+
+Another major challenge was working on Windows. A lot of examples online use Unix-based commands, and we initially used things like cp in our Snakefile without realizing they wouldn’t work in PowerShell. That caused some confusing errors until we figured out the issue. We had to switch to more cross-platform solutions, like handling file copying in Python instead of relying on shell commands. On top of that, we kept running into permission errors, especially with Snakemake’s .snakemake folder. This got even worse because we were working inside a OneDrive folder, which constantly syncs files and can lock them in the background. That led to repeated “access denied” errors that weren’t really about our code at all. Once we understood what was happening, it made more sense, but it definitely slowed things down.
+
+File organization was another area that caused problems early on. We had issues with inconsistent folder names, incorrect paths, and even small things like accidentally saving config files with double .json extensions. Those kinds of mistakes made Snakemake fail because it couldn’t find the right inputs. Cleaning up the folder structure and making everything consistent (like separating raw, cleaned, and merged data) made a big difference.
+
+The last challenge was actually combining the datasets. The complaints data is at the level of individual reports, while the energy data is at the building level, and there’s no shared ID to connect them. We ended up using latitude and longitude to match them, rounding the coordinates to make it work. It’s not perfect, but it was a practical way to link the data and move forward with the analysis. Overall, most of the difficulty came from technical setup and making the workflow reliable, rather than from the actual research question.
 
 # Reproducing
 
