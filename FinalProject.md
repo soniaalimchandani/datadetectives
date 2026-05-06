@@ -143,7 +143,7 @@ Timeliness (Currency): The dataset has 2023 information and was reported in 2024
 
 # Data Cleaning
 
-For data cleaning of the CDPH Environmental Complaints data, we first removed all rows without complaint dates. Then we removed all rows with complaint dates outside of 2023 as the other dataset uses only 2023 data, so we wanted the timeframes to match between the datasets.
+For data cleaning of the CDPH Environmental Complaints data, we first made sure all dates were in the same formatting in OpeRefine by converting all values in the complaint date column to standardized Date values. Then we removed all rows without complaint dates. Then we removed all rows with complaint dates outside of 2023 as the other dataset uses only 2023 data, so we wanted the timeframes to match between the datasets. 
 
 ## Energy Benchmarking 2023 Data
 
