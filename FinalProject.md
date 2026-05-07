@@ -236,3 +236,18 @@ Machine Readable Descriptive metadata file describing project in conformance wit
 
 
 # References
+
+### Datasets
+> **Environmental Complaints**
+> - Source: City of Chicago Data Portal
+> - License: Open Data Commons Attribution License
+> - Terms: Data provided "as is"; must provide specific attribution.
+> - Required attribution: "This site provides applications using data that has been modified for use from its original source, www.cityofchicago.org, the official website of the City of Chicago. The City of Chicago makes no claims as to the content, accuracy, timeliness, or completeness of any of the data provided at this site. The data provided at this site is subject to change at any time. It is understood that the data provided at this site is being used at one's own risk."
+
+### Third-Party Software
+> - **Python**: PSF License
+> - **OpenRefine**: BSD 3-Clause License
+> - **plotly.express**: MIT License
+> - **pandas**: BSD 3-Clause License
+> - **matplotlib**: PSF License
+> - **seaborn**: BSD 3-Clause License
