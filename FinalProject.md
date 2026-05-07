@@ -11,6 +11,8 @@
 - Summary
 - Data Quality
 - Data Cleaning (CDPH Environmental Complaints)
+- Findings
+- Future Work
 - Metadata
 
 # Summary
