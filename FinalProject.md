@@ -3,6 +3,7 @@
 # Contributors
 ## Sonia Alimchandani
 - Summary
+- Data Profile
 - Data Cleaning (Energy Benchmarking 2023 Data)
 - Challenges
 - Reproducing
