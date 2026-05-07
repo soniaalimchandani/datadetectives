@@ -162,6 +162,25 @@ Lastly, we reviewed latitude and longitude values for accuracy. Two addresses in
 
 # Findings
 
+Our final finding is that **there is a negative correlation** between number of environmental complaints and ENERY STAR ratings, but it is hard to say if these results are definitive or should be treated with high regard because of our limited sample size of 412 observations after merging the two datasets. There are some variations to the negative trend line and these results could be improved with more complaints per neighborhood because some of the neighborhoods have a very limited amount of complaints pertaining to them. Though, we do not know if it is a data weakness that some neighborhoods don't have many complaints or if that is an indication of high energy efficiency in that neighborhood.
+
+Before we could begin creating visualizations, we had to create clusters of the data. We thought about going about this a few ways. First, we considered using DBSCAN and clustering based on density. This method wasn't ideal for our purposes because it resulted in over 100 observations being treated as 'noise' or outliers instead of data points used in the analysis. Next, we tried using K-Means clustering. This method worked better and we experimented with different numbers of clusters and minimum amount of observations in clusters. After trying many variations with this method, we felt it was subjective because we were essentially creating our own neighborhoods when Chicago has well-known neighborhoods and areas. The final clustering method we attempted, and the method we ended up using, was grouping the observations by coordinates into pre-established Chicago neighborhoods. We found approximate latitude and longitude coordinates for various Chicago neighborhoods, and we created a new column `neighborhood` that grouped all of the complaint locations. Using this method, we ended with 8 neighborhoods. 
+
+Our first visualization we created is a map of Chicago that displays our 8 different neighborhoods with different colors noting the areas.
+<img width="446" height="800" alt="newplot" src="https://github.com/user-attachments/assets/29687a86-fe7e-4563-9c39-fb86c57965cc" />
+
+This map shows the location where complaints in the city took place that overlap with building ENERY STAR submissions from our merged datasets. Seeing this on a map helps us understand where the different neighborhoods are and how dense the number of complaints are per neighborhoods. It does not show ENERGY STAR ratings though, so we had to create more visuals for our analysis.
+
+These are two visualizations that demonstrate our final findings and show the trends we have derived from our datasets. This bar chart shows the number of complaints per neighborhoods with the height of the bar and the black trend line shows the average ENERGY STAR score per neighborhood. As the line graph shows that shows the neighborhoods with low number of environmental complaints generally have higher energy efficiency scores and the neighborhoods with a high number of complaints generally have lower efficiency scores.
+
+<img width="1389" height="690" alt="image" src="https://github.com/user-attachments/assets/2bd8b9c6-7316-4caa-8ed8-f517b49fcafc" />
+
+
+This final visualization is just another depiction of the information shown in a different way with another set of bars instead of the trend line.
+
+<img width="1585" height="844" alt="image" src="https://github.com/user-attachments/assets/0cc5226e-db77-4962-9d43-7136c6336b34" />
+
+
 # Future Work
 
 # Challenges
