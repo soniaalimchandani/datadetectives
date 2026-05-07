@@ -116,7 +116,7 @@ This enables analysis of whether areas with lower energy efficiency (lower ENERG
 # Data Quality
 Data Quality is assessed based on 4 characteristics: Accuracy, Consistency, Timeliness, and Completeness.
 
-Analysis on Environmental Concerns Data:
+### Analysis on Environmental Concerns Data:
 
 Completeness: 690 rows with blank 'Complaint Details.' These values being incomplete will make it harder to detect duplicate rows because identical details would be a high indicator of a duplicate complaint. We also had to delete all columns that were missing a Complaint Date. There is no way to tell if those complaints were from 2023, so they had to be dropped. Those rows could have been from 2023 and would have influenced our results, but they were empty.
 
@@ -128,7 +128,7 @@ Consistency: Formatting and values in different columns are consistent. The addr
 
 Timeliness (Currency): This dataset is updated very frequently on a daily or every few days basis. The data from the set that we are using, however, is pretty fixed. We are only extracting the rows with comlaints from 2023 for our analysis. All of the complaints have a 'RESOLVED DATE,' so the information is current and was updated promptly upon resolution of the complaint.
 
-Analysis on Building Efficiency Scores Data:
+### Analysis on Building Efficiency Scores Data:
 
 Completeness: There are 353 blank Chicago Energy Ratings in the dataset for buildings that were exempt from reporting their information. Many columns in the dataset are missing information. We will most likely have to drop rows that were exempt from being rated and for buildings that did not report their information, so it will hurt the completeness and analysis for our final report.
 
