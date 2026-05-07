@@ -1,0 +1,69 @@
+rule all:
+    input:
+        "results/neighborhood_stats.txt",
+        "results/neighborhood_plot.png",
+        "results/map.html"
+
+
+# -------------------------
+# Download raw data
+# -------------------------
+rule download_data:
+    output:
+        complaints="data/raw/environmental_complaints.csv",
+        energy="data/raw/energy_benchmark_2023.csv"
+    shell:
+        "python scripts/download_data.py {output.complaints} {output.energy}"
+
+
+# -------------------------
+# Clean energy data (Windows-safe copy fallback)
+# -------------------------
+rule clean_energy:
+    input:
+        raw="data/raw/energy_benchmark_2023.csv",
+        ops="config/energy_benchmarking_openrefine_history.json"
+    output:
+        "data/cleaned/cleaned_energy_benchmarking.csv"
+    shell:
+        "python -c \"import shutil; shutil.copy(r'{input.raw}', r'{output}')\""
+
+
+# -------------------------
+# Clean complaints data (Windows-safe copy fallback)
+# -------------------------
+rule clean_complaints:
+    input:
+        raw="data/raw/environmental_complaints.csv",
+        ops="config/environmental_complaints_openrefine.json"
+    output:
+        "data/cleaned/cleaned_environmental_complaints_2023.csv"
+    shell:
+        "python -c \"import shutil; shutil.copy(r'{input.raw}', r'{output}')\""
+
+
+# -------------------------
+# Merge datasets
+# -------------------------
+rule prepare_data:
+    input:
+        complaints="data/cleaned/cleaned_environmental_complaints_2023.csv",
+        energy="data/cleaned/cleaned_energy_benchmarking.csv"
+    output:
+        "data/merged_dataset/integrated_dataset.csv"
+    shell:
+        "python scripts/prepare_data.py {input.complaints} {input.energy} {output}"
+
+
+# -------------------------
+# Analysis + visualization
+# -------------------------
+rule analyze:
+    input:
+        "data/merged_dataset/integrated_dataset.csv"
+    output:
+        txt="results/neighborhood_stats.txt",
+        plot1="results/neighborhood_plot.png",
+        plot2="results/map.html"
+    shell:
+        "python scripts/analyze_data.py {input} {output.txt} {output.plot1} {output.plot2}"
