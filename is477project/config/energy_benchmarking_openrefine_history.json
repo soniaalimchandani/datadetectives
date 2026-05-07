@@ -1,0 +1,449 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Property Name",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Property Name using expression value.toUppercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Exempt From Chicago Energy Rating",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "FALSE"
+      }
+    ],
+    "description": "Mass edit cells in column Exempt From Chicago Energy Rating"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Exempt From Chicago Energy Rating",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRUE"
+      }
+    ],
+    "description": "Mass edit cells in column Exempt From Chicago Energy Rating"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Community Area",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Community Area using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Primary Property Type",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Primary Property Type using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gross Floor Area - Buildings (sq ft)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gross Floor Area - Buildings (sq ft) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Gross Floor Area - Buildings (sq ft)",
+    "expression": "grel:value.replace(\",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Gross Floor Area - Buildings (sq ft) using expression grel:value.replace(\",\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "All Other Fuel Use (kBtu)",
+    "description": "Remove column All Other Fuel Use (kBtu)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "District Chilled Water Use (kBtu)",
+    "description": "Remove column District Chilled Water Use (kBtu)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "District Steam Use (kBtu)",
+    "description": "Remove column District Steam Use (kBtu)"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Reporting Status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Not Submitted"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Reporting Status"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Reporting Status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Not Covered 2024"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Reporting Status"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Reporting Status",
+          "expression": "value",
+          "columnName": "Reporting Status",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Water Use (kGal)",
+    "expression": "grel:value.replace(\",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Water Use (kGal) using expression grel:value.replace(\",\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Water Use (kGal)",
+    "description": "Remove column Water Use (kGal)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Electricity Use (kBtu)",
+    "description": "Remove column Electricity Use (kBtu)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Natural Gas Use (kBtu)",
+    "description": "Remove column Natural Gas Use (kBtu)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Source EUI (kBtu/sq ft)",
+    "description": "Remove column Source EUI (kBtu/sq ft)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Weather Normalized Site EUI (kBtu/sq ft)",
+    "description": "Remove column Weather Normalized Site EUI (kBtu/sq ft)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Weather Normalized Source EUI (kBtu/sq ft)",
+    "description": "Remove column Weather Normalized Source EUI (kBtu/sq ft)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Location",
+    "description": "Remove column Location"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Exempt From Chicago Energy Rating",
+          "expression": "value",
+          "columnName": "Exempt From Chicago Energy Rating",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "TRUE",
+                "l": "TRUE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Exempt From Chicago Energy Rating",
+    "description": "Remove column Exempt From Chicago Energy Rating"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Exempt From Chicago Energy Rating",
+          "expression": "value",
+          "columnName": "Exempt From Chicago Energy Rating",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FALSE",
+                "l": "FALSE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Total GHG Emissions (Metric Tons CO2e)",
+    "expression": "grel:value.replace(\",\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Total GHG Emissions (Metric Tons CO2e) using expression grel:value.replace(\",\", \"\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Reporting Status",
+    "description": "Remove column Reporting Status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Row_ID",
+    "description": "Remove column Row_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Exempt From Chicago Energy Rating",
+          "expression": "value",
+          "columnName": "Exempt From Chicago Energy Rating",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FALSE",
+                "l": "FALSE"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "GHG Intensity (kg CO2e/sq ft)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column GHG Intensity (kg CO2e/sq ft) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Address",
+    "expression": "grel:value.replace(\".\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Address using expression grel:value.replace(\".\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Property Name",
+    "expression": "grel:value.replace(\".\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Property Name using expression grel:value.replace(\".\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Address",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Address using expression value.toUppercase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Total GHG Emissions (Metric Tons CO2e)",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "431"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "431.0"
+      }
+    ],
+    "description": "Mass edit cells in column Total GHG Emissions (Metric Tons CO2e)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Total GHG Emissions (Metric Tons CO2e)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Total GHG Emissions (Metric Tons CO2e) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Site EUI (kBtu/sq ft)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Site EUI (kBtu/sq ft) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENERGY STAR Score",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column ENERGY STAR Score using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Chicago Energy Rating",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Chicago Energy Rating using expression value.toNumber()"
+  }
+]
